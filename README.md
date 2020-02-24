@@ -1,15 +1,14 @@
 
-# Trabalho Final - Devops 
+# Trabalho Final - Academia Neon Devops
 
 ## Instruções
 1.  Façam um fork deste repositório
-2.  Criem uma branch chamada: dev    
-3.  Dentro desta branch, criem uma pasta com o número do grupo de vcs, ex: grupo-01    
-4.  Inicializem um projeto ansible nos mesmos moldes que vimos em aula:-            
+2.  Criem uma branch chamada: dev     
+3.  Inicializem um projeto ansible nos mesmos moldes que vimos em aula:-            
  \- ansible.cfg
  \- /inventory
  \- /playbooks
-6.  Comitem!!!
+4.  Comitem!!!
  
 ## Dependências
 * [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) 
