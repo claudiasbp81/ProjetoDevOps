@@ -1,0 +1,2 @@
+*.pem
+playbooks/vars/aws_credentials.yml
