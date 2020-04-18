@@ -1,0 +1,27 @@
+- name: "Ansible para criar S3 Bucket"
+  hosts: local
+  vars_files:
+    - vars/aws_credentials.yml
+
+  vars:
+    AWS_access_key: "{{ AWSAccessKeyId }}"
+    AWS_secret_key: "{{ AWSSecretKey }}"
+
+  tasks:
+  - name: Criando S3 bucket - HOMOLOG
+    s3_bucket:
+      name: digitalhouse-divasdigitais-homolog
+      aws_access_key: "{{ AWS_access_key }}"
+      aws_secret_key: "{{ AWS_secret_key }}"
+      state: present
+      region: sa-east-1
+      versioning: no
+
+  - name: Criando S3 bucket - PRODUCAO
+    s3_bucket:
+      name: digitalhouse-divasdigitais-producao
+      aws_access_key: "{{ AWS_access_key }}"
+      aws_secret_key: "{{ AWS_secret_key }}"
+      state: present
+      region: sa-east-1
+      versioning: no      
